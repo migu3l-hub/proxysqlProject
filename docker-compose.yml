@@ -1,0 +1,11 @@
+version: 3
+services:
+  proxysql:
+    image: proxysql/proxysql:2.4.4-debian
+    volumes:
+      - "./proxysql.cnf:/etc/proxysql.cnf"
+      - "./proxysql:/var/lib/proxysql"
+    ports:
+      - "6033:6033"
+      - "6032:6032"
+      - "6080:6080"
