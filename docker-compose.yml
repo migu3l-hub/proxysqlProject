@@ -1,4 +1,4 @@
-version: 3
+version: "3"
 services:
   proxysql:
     image: proxysql/proxysql:2.4.4-debian
